@@ -1,3 +1,8 @@
+# Leaarning Rails
+
+Learning Rails with a tutorial from [learn-rails.com](http://learn-rails.com/).
+
+
 # Rails on Repl.it
 
 This is a template to get you started with Rails on Repl.it. It's ready to go so you can just hit run and start coding!
