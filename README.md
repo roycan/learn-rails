@@ -1,9 +1,28 @@
-Ruby on Rails Tutorial
-## "hello, world!"
-This is the first application for the
-[*Ruby on Rails Tutorial*](https://www.railstutorial.org/)
-by [Michael Hartl](https://www.michaelhartl.com/). Hello, world!
-
+# Ruby on Rails Tutorial sample application
+This is the sample application for
+[*Ruby on Rails Tutorial:
+Learn Web Development with Rails*](https://www.railstutorial.org/)
+(6th Edition)
+by [Michael Hartl](https://www.michaelhartl.com/).
+## License
+All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
+is available jointly under the MIT License and the Beerware License. See
+[LICENSE.md](LICENSE.md) for details.
+## Getting started
+To get started with the app, clone the repo and then install the needed gems:
+```
+$ gem install bundler -v 2.2.17
+$ bundle _2.2.17_ config set --local without 'production'
+$ bundle _2.2.17_ install
+```
+Next, migrate the database:
+```
+$ rails db:migrate
+```
+Finally, run the test suite to verify that everything is working correctly:
+```
+$ rails test
+```
 
 # Rails on Repl.it
 
