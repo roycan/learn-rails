@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="h-100">
   <head>
     <title><%= full_title(yield(:title)) %> </title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <meta name="description" content="Sample App">
+    <meta name="author" content="Roy Canseco">
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render "layouts/rails_default"%>
+    <%= render "layouts/bootstrap_css"%>
+
   </head>
 
-  <body>
-    <%= yield %>
+ <body class="d-flex flex-column h-100">
+
+    <%= render "layouts/header"%>
+
+
+    <main class="flex-shrink-0">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+
+
+    <%= render "layouts/footer"%>
+    <%= render "layouts/bootstrap_js"%>
+
   </body>
 </html>
