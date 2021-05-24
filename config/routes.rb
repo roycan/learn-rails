@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
+  get("/ch6", to: redirect("/06-modeling_users.html") )
+
 end
