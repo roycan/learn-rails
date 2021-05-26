@@ -11,4 +11,5 @@ Rails.application.routes.draw do
 
   get("/ch6", to: redirect("/06-modeling_users.html") )
 
+  resources(:users)
 end
