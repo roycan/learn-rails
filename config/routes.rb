@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  
+
   get('/signup', to: "users#new") 
   get '/help', to: "static_pages#help"
   get "/contact", to: "static_pages#contact"
@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   get("/ch6", to: redirect("/06-modeling_users.html") )
+  get("/ch7", to: redirect("/07-sign-up.html"))
+
+
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
 
   resources(:users)
 end
