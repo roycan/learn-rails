@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get("/ch6", to: redirect("/06-modeling_users.html") )
   get("/ch7", to: redirect("/07-sign-up.html"))
+  get("/ch8", to: redirect("/08-basic_login.html"  ))
 
 
   get    '/login',   to: 'sessions#new'
