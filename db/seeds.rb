@@ -9,7 +9,7 @@
 
 # Create a main sample user.
 User.create!(name:  "Example User",
-             email: "example@railstutorial.org",
+             email: "user@example.com",
              password:              "foobar",
              password_confirmation: "foobar",
              admin: true)
@@ -23,4 +23,14 @@ User.create!(name:  "Example User",
                email: email,
                password:              password,
                password_confirmation: password)
+end
+
+
+# Generate microposts for a subset of users
+users = User.order(:created_at).take(7)
+50.times do
+  sample_content = Faker::Lorem.sentence(word_count: 10)
+  users.each { |user| 
+    user.microposts.create!(content: sample_content)
+  } 
 end

@@ -1,0 +1,9 @@
+<% if @feed_items.any? %>
+  <ol class="microposts">
+    <%= render @feed_items %>
+  </ol>
+  <span class="digg_pagination"> 
+    <%= will_paginate( @feed_items, 
+                      params: { :controller => :static_pages, :action => :home } ) %> 
+  </span>
+<% end %>
