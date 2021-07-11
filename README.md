@@ -1,19 +1,18 @@
 # Ruby on Rails Tutorial sample application
-This is the sample application for
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](https://www.railstutorial.org/)
-(6th Edition)
-by [Michael Hartl](https://www.michaelhartl.com/).
+This application is made for teaching Rails MVP development.
+It can be used to account for Alternative Work Arrangements (AWA)
+by [Roy Canseco](https://roycan.github.io).
+
 ## License
-All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
-is available jointly under the MIT License and the Beerware License. See
+All source code is available jointly under the MIT License and the Beerware License. See
 [LICENSE.md](LICENSE.md) for details.
+
 ## Getting started
 To get started with the app, clone the repo and then install the needed gems:
 ```
-$ gem install bundler -v 2.2.17
-$ bundle _2.2.17_ config set --local without 'production'
-$ bundle _2.2.17_ install
+$ gem install bundler (maybe version 2.2.17)
+$ bundle config set --local without 'production'
+$ bundle install
 ```
 Next, migrate the database:
 ```
@@ -24,7 +23,7 @@ Finally, run the test suite to verify that everything is working correctly:
 $ rails test
 ```
 
-# Rails on Repl.it
+# Usage in replit.com
 
 This is a template to get you started with Rails on Repl.it. It's ready to go so you can just hit run and start coding!
 
@@ -44,10 +43,12 @@ Start every command with `bundle exec` so that it runs in the context of the ins
 
 ## Database
 
-SQLite would work in development but we don't recommend running it in production. Instead look into using the built-in [Repl.it database](http://docs.repl.it/misc/database). Otherwise you are welcome to connect databases from your favorite provider. 
+SQLite would work in development. 
 
 ## Help
 
-If you need help you might be able to find an answer on our [docs](https://docs.repl.it) page. Alternatively you can [ask in the community](https://repl.it/talk/ask). Feel free to report bugs [here](https://repl.it/bugs) and give us feedback [here](https://repl.it/feedback).
+For any questions or concerns, you may email
+
+    mis@pshs.edu.ph
 
 
