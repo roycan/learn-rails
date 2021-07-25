@@ -1,6 +1,10 @@
 <% provide(:title, 'All users') %>
 <h1>All users</h1>
 
+<div class="input-group">
+  <%= render 'users/search' %>
+</div>
+<br> <br> <hr> <br> <br>
 <div class="digg_pagination">
 <%= will_paginate %>
 </div>

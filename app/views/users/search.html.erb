@@ -1,0 +1,9 @@
+<% unless  @results.nil? %>
+  <h3> Search Results </h3>
+
+  <div class="users">
+  <% @results.each do |result| %>
+    <%= render result %> <br>
+  <% end %>
+  </div>
+<% end %>

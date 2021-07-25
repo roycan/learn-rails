@@ -1,4 +1,4 @@
-# Ruby on Rails Tutorial sample application
+# AWA app
 This application is made for teaching Rails MVP development.
 It can be used to account for Alternative Work Arrangements (AWA)
 by [Roy Canseco](https://roycan.github.io).
